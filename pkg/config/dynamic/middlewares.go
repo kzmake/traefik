@@ -141,6 +141,7 @@ type ForwardAuth struct {
 	Address             string     `json:"address,omitempty" toml:"address,omitempty" yaml:"address,omitempty"`
 	TLS                 *ClientTLS `json:"tls,omitempty" toml:"tls,omitempty" yaml:"tls,omitempty"`
 	TrustForwardHeader  bool       `json:"trustForwardHeader,omitempty" toml:"trustForwardHeader,omitempty" yaml:"trustForwardHeader,omitempty" export:"true"`
+	ForwardRequest      bool       `json:"forwardRequest,omitempty" toml:"forwardRequest,omitempty" yaml:"forwardRequest,omitempty" export:"true"`
 	AuthResponseHeaders []string   `json:"authResponseHeaders,omitempty" toml:"authResponseHeaders,omitempty" yaml:"authResponseHeaders,omitempty"`
 }
 
